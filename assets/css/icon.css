@@ -1,0 +1,78 @@
+.icon{
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.icon-xs{
+    width: 12px;
+    height: 12px;
+}
+.icon-lg{
+    width: 24px;
+    height: 24px;
+}
+.icon-l{
+    width: 32px;
+    height: 32px;
+}
+.icon-check{
+    background-image: url(../icon/check.svg);
+}
+.icon-arrow-right{
+    background-image: url(../icon/arrow-right.svg);
+}
+.icon-bell{
+    background-image: url(../icon/bell.svg);
+}
+.icon-create{
+    background-image: url(../icon/create.svg);
+}
+.icon-explores{
+    background-image: url(../icon/explores.svg);
+}
+.icon-history{
+    background-image: url(../icon/history.svg);
+}
+.icon-home{
+    background-image: url(../icon/home.svg);
+}
+.icon-library{
+    background-image: url(../icon/library.svg);
+}
+.icon-like-videos{
+    background-image: url(../icon/like-videos.svg);
+}
+.icon-menu{
+    background-image: url(../icon/menu.svg);
+}
+.icon-more{
+    background-image: url(../icon/more.svg);
+}
+.icon-search{
+    background-image: url(../icon/search.svg);
+}
+.icon-shorts{
+    background-image: url(../icon/shorts.svg);
+}
+.icon-show-more{
+    background-image: url(../icon/show-more.svg);
+}
+.icon-subscriptions{
+    background-image: url(../icon/subscriptions.svg);
+}
+.icon-voices{
+    background-image: url(../icon/voices.svg);
+}
+.icon-watch-later{
+    background-image: url(../icon/watch-later.svg);
+}
+.icon-yourvideos{
+    background-image: url(../icon/yourvideos.svg);
+}
+
+

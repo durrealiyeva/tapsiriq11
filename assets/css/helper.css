@@ -1,0 +1,19 @@
+hr{
+    margin: 16px 0;
+   border: 1px solid #383838;
+}
+.navlink img , .profile img, .photo-comment img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.page-right-body article .photo img{
+    width: 100%;
+    object-fit: cover;
+}
