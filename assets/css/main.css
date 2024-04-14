@@ -111,6 +111,8 @@ h3{
 .page-right-head{
     position: fixed;
     background-color: #181818;
+    left: 230px;
+    width: calc(100% - 230px);
 }
 .head2{
     display: flex;
