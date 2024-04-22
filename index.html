@@ -11,11 +11,12 @@
 </head>
 <body>
    <main class="page">
+    <input type="checkbox" class="menu-checkbox" id="menu-bar">
     <aside class="page-left">
         <div class="top">
-            <button>
+            <label class="menu-bar" for="menu-bar">
                 <i class="icon icon-menu"></i>
-            </button>
+            </label>
             <a href="#">
                 <img src="./assets/img/Youtube logo.png">
             </a>
@@ -66,8 +67,9 @@
                     <span>Show more</span>
                 </a>
             </div>
-            <hr>
-            <div>
+            
+            <div class="subscription">
+                <hr>
                 <h3>SUBSCRIPTIONS</h3>
                 <a href="#" class="navlink" title="Nadir On The Go">
                     <figure class="icon icon-lg img">
@@ -186,10 +188,22 @@
                     <button class="btn-link">
                         <i class="icon icon-lg icon-bell"></i>
                     </button>
-                    <div class="profile">
-                        <figure class="icon icon-l">
-                            <img src="./assets/img/nadir.png">
-                        </figure>
+                    <div class="dropdown">
+                        <input type="checkbox" id="dropdown-menu">
+                        <label class="profile" for="dropdown-menu">
+                            <figure class="icon icon-l">
+                                <img src="./assets/img/nadir.png">
+                            </figure>
+                        </label>
+                        <div class="dropdown-content">
+                           <div class="dropdown-body">
+                            <a class="link" href="#">Profile</a>
+                            <a class="link"href="#">History</a>
+                            <a class="link"href="#">Help</a>
+                            <a class="link"href="#">Settings</a>
+                            <a class="link"href="#">Exit</a>
+                           </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -206,6 +220,11 @@
                 <button class="category">Tech</button>
                 <button class="category">Iphone 13</button>
                 <button class="category">User Interface Design</button>
+                <button class="category">Computer</button>
+                <button class="category">Case Study</button>
+                <button class="category">Music</button>
+                <button class="category">Bnagla Lofi</button>
+                <button class="category">Saintmartin</button>
                 <button class="category">Computer</button>
                 <button class="category">Case Study</button>
                 <button class="category">Music</button>
