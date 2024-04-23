@@ -4,31 +4,35 @@ body{
 body * {
     color: #fff;
 }
+
 .page{
     display: flex;
 }
+ .menu-checkbox{
+    display: none;
+ }
+
+/* PAGE-LEFT CHECKED */
+
+
 .page:has(.menu-checkbox:checked) .page-left{
     width: 220px;
     overflow-x: hidden;
     overflow-y: auto;
 }
-.page:has(.menu-checkbox:checked) .page-right{
-    padding-left: 230px;
-}
-.page:has(.menu-checkbox:checked) .page-right-head{
-    width: calc(100% - 230px);
-}
-.page-right-head{
-    position: fixed;
-    background-color: #181818;
-    width: calc(100% - 70px);
-}
+
 .page:has(.menu-checkbox:checked) .subscription{
     display: block;
 }
-.subscription{
-    display: none;
+
+.page:has(.menu-checkbox:checked) .navbar{
+    padding-right: 20px;
 }
+
+
+/* PAGE-LEFT NOT CHECKED */
+
+
 .page-left{
     background-color: #212121;
     width: 60px;
@@ -36,7 +40,9 @@ body * {
     top: 0;
     bottom: 0;
     left: 0;
+    z-index:1;
 }
+
 .page-left .top{
     width: 100%;
     padding: 15px 20px ;
@@ -49,18 +55,16 @@ body * {
     z-index: 1;
     overflow: hidden;
 }
-.top .menu-bar{
-    cursor: pointer;
-}
+
 .page-left .top .icon{
 margin-right: 18px;
+cursor: pointer;
 }
-.page:has(.menu-checkbox:checked) .navbar{
-    padding-right: 20px;
-}
+
 .navbar{
     padding-bottom: 50px;
 }
+
 .navbar .navlink{
     display: flex;
     align-items: center;
@@ -68,10 +72,12 @@ margin-right: 18px;
     padding: 10px 20px;
     height: 38px;
 }
+
 .page:has(:not(.menu-checkbox:checked)) .navlink:hover > span{
     opacity: 1;
     visibility: visible;
 }
+
 .page:has(:not(.menu-checkbox:checked)) .navlink > span{
     white-space: nowrap;
     position: absolute;
@@ -85,24 +91,33 @@ margin-right: 18px;
     opacity: 0;
     visibility: hidden;  
 }
+
 .page:has(.menu-checkbox:checked) .navlink > span{
  position: initial;
  opacity: 1;
  visibility: visible;
  background-color: transparent;
 }
+
 .navbar .navlink .icon{
     margin-right:20px ;
     flex-shrink: 0;
 }
+
 .navbar .navlink.active{
     background-color: #383838;
 }
+
+.subscription{
+    display: none;
+}
+
 h3{
     padding-left:30px ;
     padding-bottom: 10px;
     color: #AAAAAA;
 }
+
 .dot{
     width: 4px;
     height: 4px;
@@ -114,20 +129,47 @@ h3{
     bottom: 0;
     right: 14px;
 }
-.page-right{
-  flex-grow: 1;
-  padding-left: 70px;
+
+/* PAGE-RIGHT CHECKED */
+
+
+.page:has(.menu-checkbox:checked) .page-right{
+    padding-left: 230px;
 }
+
+.page:has(.menu-checkbox:checked) .page-right-head{
+    width: calc(100% - 230px);
+}
+
+
+/* PAGE-RIGHT NOT CHECKED */
+
+
+
+.page-right{
+    flex-grow: 1;
+    padding-left: 70px;
+  }
+
+.page-right-head{
+    position: fixed;
+    background-color: #181818;
+    width: calc(100% - 70px);
+    
+}
+
 .page-right .head{
     display: flex;
     padding-top:10px ;
 }
+
 .head .search{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-grow: 2;
 }
+
 .search div:first-child{
     display: flex;
     align-items: center;
@@ -136,6 +178,7 @@ h3{
     border-radius: 5px;
     margin-right: 10px;
 }
+
 .search input{
     width: 534px;
     align-items: center;
@@ -143,7 +186,8 @@ h3{
     padding: 10px;
     height: 100%;
 }
-.search span{
+
+.search .search-icon{
     width: 56px;
     height: 36px;
     background-color: #323232;
@@ -151,24 +195,32 @@ h3{
     display: inline-flex;
     justify-content: center;
 }
+
 .head .button{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 38px;
 }
+
 .btn-link{
     margin-right: 28px;
 }
+ 
+/* PROFILE */
+
 .dropdown{
     position: relative;
 }
+
 .profile{
     cursor: pointer;
 }
+
 .dropdown input[type="checkbox"] {
     display: none;
 }
+
 .dropdown-content{
     position: absolute;
     top: 100%;
@@ -192,6 +244,9 @@ h3{
     align-items: center;
     padding: 20px;
 }
+
+/* HEAD2 */
+
 .head2{
     display: flex;
     overflow-x: auto;
@@ -222,6 +277,9 @@ h3{
     margin: 0 auto;
     background: linear-gradient(270deg, #121212 67.19%, rgba(33, 33, 33, 0) 100%);
 }
+
+/* PAGE-RIGHT BODY */
+
 .page-right-body{
     padding-top: 150px;
     display: grid;
