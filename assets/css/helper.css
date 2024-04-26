@@ -2,7 +2,10 @@ hr{
     margin: 16px 0;
    border: 1px solid #383838;
 }
-.navlink img , .profile img, .photo-comment img{
+.hr-s{
+    margin: 7px 0px;
+}
+.navlink img , .profile img, .photo-comment img, .profil-img img{
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
