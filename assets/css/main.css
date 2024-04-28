@@ -228,6 +228,7 @@ h3{
     padding: 10px;
     opacity: 0;
     visibility: hidden;
+    z-index: 1;
 }
 .dropdown:has(:checked) .dropdown-content{
     opacity: 1;
