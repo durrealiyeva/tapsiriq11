@@ -141,9 +141,6 @@ h3{
     width: calc(100% - 230px);
 }
 
-.page:has(.menu-checkbox:checked) .page-right-body{
-    grid-template-columns: repeat(3, 1fr);
-}
 
 /* PAGE-RIGHT NOT CHECKED */
 
@@ -151,6 +148,7 @@ h3{
 
 .page-right{
     padding-left: 70px;
+    width: 100%;
   }
 
 .page-right-head{
@@ -300,8 +298,9 @@ h3{
 
 .page-right-body{
     padding-top: 140px;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     column-gap: 14px;
     row-gap: 35px;
     padding-right: 28px;
